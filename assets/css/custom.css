@@ -1,25 +1,25 @@
 body {
-    background-color: black !!important;
+    background-color: black ! !important;
 }
 
 .text-fill-effect {
-			--cnvs-text-fill-placeholder: rgba(var(--cnvs-contrast-rgb), 0.1);
-			--cnvs-text-fill-color: linear-gradient(to right, var(--cnvs-contrast-1000), var(--cnvs-contrast-1000));
-			-webkit-text-fill-color: var(--cnvs-text-fill-placeholder);
-			position: relative;
-			background-image: var(--cnvs-text-fill-color);
-			background-size: calc(var(--cnvs-scroll-start) * 100%) 100%;
-			background-repeat: no-repeat;
-		}
+    --cnvs-text-fill-placeholder: rgba(var(--cnvs-contrast-rgb), 0.1);
+    --cnvs-text-fill-color: linear-gradient(to right, var(--cnvs-contrast-1000), var(--cnvs-contrast-1000));
+    -webkit-text-fill-color: var(--cnvs-text-fill-placeholder);
+    position: relative;
+    background-image: var(--cnvs-text-fill-color);
+    background-size: calc(var(--cnvs-scroll-start) * 100%) 100%;
+    background-repeat: no-repeat;
+}
 
-        .text-splitter.scroll-detect span {
-            opacity: calc(0.1 + (1 * var(--cnvs-scroll-percent)));
-            transform: rotateX(20deg);
-            transition: all .3s ease;
-            transition-delay: 0s;
-        }
+.text-splitter.scroll-detect span {
+    opacity: calc(0.1 + (1 * var(--cnvs-scroll-percent)));
+    transform: rotateX(20deg);
+    transition: all .3s ease;
+    transition-delay: 0s;
+}
 
-        .text-splitter.scroll-detect.scroll-detect-inview span {
-            transform: rotateX(0);
-            transition-delay: calc(.04s * var(--cnvs-split-index));
-        }
+.text-splitter.scroll-detect.scroll-detect-inview span {
+    transform: rotateX(0);
+    transition-delay: calc(.04s * var(--cnvs-split-index));
+}
